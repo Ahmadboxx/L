@@ -1,12 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	var text = 'Hello';
-var text_to_repeat = '';
-for(i=0; i<100; i++){
-    text_to_repeat += text;
-}
-alert(text_to_repeat);
+	<body>
+<script type="text/javascript">
+<!--
+/*
+********************************************************
+Example confirm box - directing to another link
+********************************************************
+*/
+var answer = confirm("Do you want to search something in google ?");
+if (answer)
+window.location = "http://www.google.com";
+else
+alert("You said: Cancel");
+
+//-->
+</script>
+</body>
 <body>
   <header>
       <h1>
