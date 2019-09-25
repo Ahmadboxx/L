@@ -1,23 +1,26 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-function x()
-{
-   if( document.getElementById("1").value.length==0)
-   {
-      alert('1 is required');
-      document.getElementById("1").focus();
-   }
+   function imageClickerz( ) {
+    $( "#sb-wrapper-inner" ).each(function( index ) {
+         $('#sb-wrapper-inner, #sb-nav-previous, #sb-nav-next').mousedown(function(event) { 
+            switch (event.which) {
+            case 3:
+                    alert('Sorry, our images are copyrighted.');
+                    break;
+            }
+        });
+    });
 }
-
-function y()
-{
-   if(document.getElementById("2").value.length==0)
-   {
-      alert('2 is required');
-      document.getElementById("2").focus();
-   }
-}
+$("#product_photo").hover(function(){
+  setTimeout(function (){
+       $('div[id^=vZoomMagnifier], img[id^=alternate_product_photo_], .vCSS_img_product_photo, .vCSS_img_larger_photo, #product_photo, #sb-nav-previous, #sb-nav-next, ').click(function(event){
+        setTimeout(function (){
+          imageClickerz( )
+          }, 800); 
+        });
+   }, 100); 
+});
 </head>
 <body>
   <header>
