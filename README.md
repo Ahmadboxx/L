@@ -1,20 +1,14 @@
 <html>
 <head>
  <body>
-
-<h2>JavaScript For Loop</h2>
-
-<p id="demo"></p>
-
-<script>
-var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-var text = "";
-var i;
-for (i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+var number = 0;
+while (number <= 100) {
+   number++;
+   if ((number % 2) != 0) {
+       continue;
+   }
+   alert(number);     // => 2, 4, 6, 8, 10 
 }
-document.getElementById("demo").innerHTML = text;
-</script>
 
 </body>
  </head>
