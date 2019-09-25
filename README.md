@@ -1,17 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <head>
-	  function prepareShowElement () {
-var nav = document.getElementById('nav');
-var links = nav.getElementsByTagName('a');
-for (var i = 0; i < links.length; i++) {
-    links[i].onclick = alert(links[i].title);
-    }
+	var text = 'Hello';
+var text_to_repeat = '';
+for(i=0; i<100; i++){
+    text_to_repeat += text;
 }
-</head>
-<body>
-</body>
+alert(text_to_repeat);
 <body>
   <header>
       <h1>
