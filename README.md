@@ -1,13 +1,36 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<script language="javascript">
-var i = 2;
-while (i <= 10) {
-document.write (i + "<br>");
-i -= 2;
+	// JSExInnerHtmlDebug.js
+window.onload = init;
+ 
+function init() {
+  document.getElementById("btn1").onclick = changeHeading1;
+  document.getElementById("btn2").onclick = changeHeading2;
+  document.getElementById("btn3").onclick = changeParagraph;
 }
-</script>
+ 
+function changeHeading1() {
+  var elm = document.getElementById("heading1");  // One element
+  console.log(elm.innerHTML);  // Print current value before modification
+  elm.innerHTML = "Hello";
+}
+ 
+function changeHeading2() {
+  var elms = document.getElementsByTagName("h2");  // Array of elements
+  for (var i = 0; i < elms.length; i++) {
+     console.log(elms[i].innerHTML);
+    elms[i].innerHTML = "Hello again!";
+  }
+}
+ 
+function changeParagraph() {
+  var elms = document.getElementsByClassName("para");  // Array of elements
+  for (var i = 0; i < elms.length; i++) {
+     console.log(elms[i].innerHTML);
+    elms[i].innerHTML = "Hello again and again!";
+  }
+}
 		</head>
 <body>
   <header>
