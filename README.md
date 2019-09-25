@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <html>
 <head>
   var clicked = 0;
