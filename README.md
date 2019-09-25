@@ -1,19 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-function loop() {
-    ...
-}
-(function () {
-    var loopIval;
-    window.startLoop = function (delay) {
-        // ensure loop is started at most once.
-        if (! loopIval) {
-            loop();
-            loopIval = setInterval(loop, delay);
-        }
-    };
-})();
+function helloWorld()
+    {
+        console.log('Hello World.');
+        helloUniverse();
+    }
+function helloUniverse()
+    {
+        console.log('Hello Universe.');
+        helloWorld();
+    }
 </head>
 <body>
   <header>
