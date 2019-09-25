@@ -4,15 +4,14 @@
     window.onload = function start() {
     slide();
 }
-function slide() {
-    var num = 0, style = document.getElementById('container').style;
-    window.setInterval(function () {
-        // increase by num 1, reset to 0 at 4
-        num = (num + 1) % 4;
 
-        // -600 * 1 = -600, -600 * 2 = -1200, etc 
-        style.marginLeft = (-600 * num) + "px"; 
-    }, 3000); // repeat forever, polling every 3 seconds
+function slide() {
+    var currMarg = 0,
+        contStyle = document.getElementById('container').style;
+    setInterval(function() {
+        currMarg = currMarg == 1800 ? 0 : currMarg + 600;
+        contStyle.marginLeft = '-' + currMarg + 'px';
+    }, 3000);
 }
     </body>
  </head>
