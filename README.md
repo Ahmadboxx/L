@@ -1,27 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-   function imageClickerz( ) {
-    $( "#sb-wrapper-inner" ).each(function( index ) {
-         $('#sb-wrapper-inner, #sb-nav-previous, #sb-nav-next').mousedown(function(event) { 
-            switch (event.which) {
-            case 3:
-                    alert('Sorry, our images are copyrighted.');
-                    break;
-            }
-        });
-    });
+  ar secret = prompt("What is the secret password?");
+
+while(secret !== 'sesame'){
+  document.write("wrong answer");
+  secret = prompt("What is the secret password?");
 }
-$("#product_photo").hover(function(){
-  setTimeout(function (){
-       $('div[id^=vZoomMagnifier], img[id^=alternate_product_photo_], .vCSS_img_product_photo, .vCSS_img_larger_photo, #product_photo, #sb-nav-previous, #sb-nav-next, ').click(function(event){
-        setTimeout(function (){
-          imageClickerz( )
-          }, 800); 
-        });
-   }, 100); 
-});
-</head>
+
+ document.write("You know the secret password. Welcome.");
+ </head>
 <body>
   <header>
       <h1>
