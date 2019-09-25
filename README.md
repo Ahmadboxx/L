@@ -1,12 +1,16 @@
 <html>
 <head>
-var number = 0;
-while (number <= 10) {
-   number++;
-   if ((number % 2) != 0) {
-       continue;
-   }
-   alert(number);     // => 2, 4, 6, 8, 10 
+window.onload = function start() {
+    slide();
+}
+function slide() {
+    var num = 0;
+    for (num=0;num<=10;num++) {
+        setTimeout("document.getElementById('container').style.marginLeft='-600px'",3000);
+        setTimeout("document.getElementById('container').style.marginLeft='-1200px'",6000);
+        setTimeout("document.getElementById('container').style.marginLeft='-1800px'",9000);
+        setTimeout("document.getElementById('container').style.marginLeft='0px'",12000);
+    }
 }
  </head>
 <body>
