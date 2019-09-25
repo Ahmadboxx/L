@@ -1,16 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-function helloWorld()
-    {
-        console.log('Hello World.');
-        helloUniverse();
-    }
-function helloUniverse()
-    {
-        console.log('Hello Universe.');
-        helloWorld();
-    }
+function x()
+{
+   if( document.getElementById("1").value.length==0)
+   {
+      alert('1 is required');
+      document.getElementById("1").focus();
+   }
+}
+
+function y()
+{
+   if(document.getElementById("2").value.length==0)
+   {
+      alert('2 is required');
+      document.getElementById("2").focus();
+   }
+}
 </head>
 <body>
   <header>
