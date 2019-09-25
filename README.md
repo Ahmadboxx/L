@@ -2,18 +2,13 @@
 <html>
 <head>
   <head>
-	<script type="text/javascript">
-		document.write("<b>Using while loops </b><br />");
-		var i = 0, j = 1, k;
-		document.write("Fibonacci series less than 40<br />");
-		while(i<40)
-		{
-			document.write(i + "<br />");
-			k = i+j;
-			i = j;
-			j = k;
-		}
-	</script>
+	  function prepareShowElement () {
+var nav = document.getElementById('nav');
+var links = nav.getElementsByTagName('a');
+for (var i = 0; i < links.length; i++) {
+    links[i].onclick = alert(links[i].title);
+    }
+}
 </head>
 <body>
 </body>
