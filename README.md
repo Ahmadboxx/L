@@ -1,18 +1,27 @@
 <html>
 <head>
 <body>
-    window.onload = function start() {
-    slide();
-}
+   <title>My Example</title>
 
-function slide() {
-    var currMarg = 0,
-        contStyle = document.getElementById('container').style;
-    setInterval(function() {
-        currMarg = currMarg == 1800 ? 0 : currMarg + 600;
-        contStyle.marginLeft = '-' + currMarg + 'px';
-    }, 3000);
-}
+
+<p id="msg"></p>
+
+<script>
+  // Set variables
+  var myBankBalance = 0;
+  var output = "";
+
+  // Do the 'for' loop
+  for (myBankBalance = 0; myBankBalance <= 10; myBankBalance++) {
+    if (myBankBalance === 5) { 
+      break; 
+      }
+    output += "My bank balance is now $" + myBankBalance + "<br>";
+  }
+
+  // Output results to the above HTML element
+  document.getElementById("msg").innerHTML = output;
+</script>
     </body>
  </head>
 <body>
