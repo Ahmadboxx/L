@@ -1,36 +1,22 @@
 <html>
 <head>
-  var clicked = 0;
-function imageClickerz( ) {
-    if(clicked === 0 || 2) {
-         $('#sb-wrapper-inner, #sb-nav-previous, #sb-nav-next').mousedown(function(event) {
-            switch (event.which) {
-            case 3:
-                    confirm('Sorry, our images are copyrighted.');
-                    break;
-            }
-        clicked = 2;
-        });
-    }
+ <body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
 }
-$("#product_photo").hover(function(){
-  setTimeout(function (){
-       $('div[id^=vZoomMagnifier]').click(function(event){
-        setTimeout(function (){
-                  if (clicked === 0 ) {
-          imageClickerz( )
-                  } else {console.log("its done dude")}
-          }, 800); 
-        });
-   }, 100); 
-});
-$('img[id^=alternate_product_photo_], .vCSS_img_product_photo, .vCSS_img_larger_photo, #product_photo, #sb-nav-previous, #sb-nav-next, ').click(function(event){
-        setTimeout(function (){
-                  if (clicked === 0 ) {
-          imageClickerz( )
-                  } else {console.log("its done dude")}
-          }, 800); 
-});
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
  </head>
 <body>
   <header>
