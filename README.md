@@ -1,6 +1,5 @@
 <html>
 <head>
- <body>
 var number = 0;
 while (number <= 10) {
    number++;
@@ -9,8 +8,6 @@ while (number <= 10) {
    }
    alert(number);     // => 2, 4, 6, 8, 10 
 }
-
-</body>
  </head>
 <body>
   <header>
