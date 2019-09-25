@@ -1,17 +1,20 @@
 <html>
 <head>
-window.onload = function start() {
+<body>
+    window.onload = function start() {
     slide();
 }
 function slide() {
-    var num = 0;
-    for (num=0;num<=10;num++) {
-        setTimeout("document.getElementById('container').style.marginLeft='-600px'",3000);
-        setTimeout("document.getElementById('container').style.marginLeft='-1200px'",6000);
-        setTimeout("document.getElementById('container').style.marginLeft='-1800px'",9000);
-        setTimeout("document.getElementById('container').style.marginLeft='0px'",12000);
-    }
+    var num = 0, style = document.getElementById('container').style;
+    window.setInterval(function () {
+        // increase by num 1, reset to 0 at 4
+        num = (num + 1) % 4;
+
+        // -600 * 1 = -600, -600 * 2 = -1200, etc 
+        style.marginLeft = (-600 * num) + "px"; 
+    }, 3000); // repeat forever, polling every 3 seconds
 }
+    </body>
  </head>
 <body>
   <header>
