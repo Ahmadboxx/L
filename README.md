@@ -1,23 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<body>
-<script type="text/javascript">
-<!--
-/*
-********************************************************
-Example confirm box - directing to another link
-********************************************************
-*/
-var answer = confirm("Do you want to search something in google ?");
-if (answer)
-window.location = "http://www.google.com";
-else
-alert("You said: Cancel");
-
-//-->
-</script>
-</body>
+	for (var i = 0; i < links.length; i++) {
+    links[i].onclick = function () {
+        alert(this.title);
+       }
+    }
 <body>
   <header>
       <h1>
