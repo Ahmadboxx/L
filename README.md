@@ -11,23 +11,23 @@ var greeting;
 
 if (yourage>3 && yourage<2){ 
 
-    greeting ='cat'; 
+    greeting ='so kid'; 
 
  
 
 } 
 
-else if(animalage>7){ 
+else if(yourage>7){ 
 
-    greeting = 'dog'; 
+    greeting = 'adult'; 
 
  
 
 } 
 
-else if (animalage<10){ 
+else if (yourage<10){ 
 
-    greeting='fish'; 
+    greeting='kid'; 
 
  
 
@@ -53,7 +53,7 @@ x =n+m;
 
   var name ; 
 
- name='razan'; 
+ name='Ahmad'; 
 
  document.write(name); 
 
