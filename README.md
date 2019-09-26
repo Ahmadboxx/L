@@ -2,16 +2,8 @@
 <head>
   <body>
    <body>
-     var targetNumber = Number(prompt("Please enter your target number", ""));
-var start = 0
-for (; ; start = start + 2)
-{
-    if (start > targetNumber)
-    {
-        break;
-    }
-    document.write(start + "<br/>");
-}
+     while (type !== 'plane' && type !== 'car' && type !=='ship' )
+ type = prompt('please try plane ,car , ship');
 </body>
 </html>
 
