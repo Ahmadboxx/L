@@ -1,11 +1,7 @@
 <html>
 <head>
 <body>
-if (confirm('Are you sure you want to save this thing into the database?')) {
-    // Save it!
-} else {
-    // Do nothing!
-}
+<input type="button" onclick="prompt('Please enter your favorite website', 'Quackit.com');" value="Display Example">
     </body>
  </head>
 <body>
