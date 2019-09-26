@@ -1,11 +1,6 @@
 <html>
 <head>
  <script>
-document.addEventListener("DOMContentLoaded", function(event) {
-
-  var e = document.getElementById("go");
-  
-  e.addEventListener( "click", function() {
 
     var name=prompt("What is your name?","");
     if ( name!=null && name!="" ) {
