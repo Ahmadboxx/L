@@ -3,12 +3,15 @@
   <body>
    <body>
      var targetNumber = Number(prompt("Please enter your target number", ""));
-var start = 0;
-for (; start <= targetNumber; start = start + 2)
+var start = 0
+for (; ; start = start + 2)
 {
+    if (start > targetNumber)
+    {
+        break;
+    }
     document.write(start + "<br/>");
 }
-
 </body>
 </html>
 
