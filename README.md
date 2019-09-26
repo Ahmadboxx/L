@@ -1,9 +1,64 @@
 <html>
 <head>
-<body>
-  <head> <title>Bullseye! Tutoring</title> <link rel ="stylesheet" href="css/c04.css" /> < /head> <body> <section id="page2"> <hl>Bullseye</hl> <img src="images/teacher.png" id="teacher2" alt="" /> <section id="blackboard"></section> </section> <script src="js/example.js"></script> 
+  <body>
+    //add content 
+
+var yourage =prompt('your age with nummber'); 
+
+ 
+
+var greeting; 
+
+if (yourage>3 && yourage<2){ 
+
+    greeting ='cat'; 
+
+ 
+
+} 
+
+else if(animalage>7){ 
+
+    greeting = 'dog'; 
+
+ 
+
+} 
+
+else if (animalage<10){ 
+
+    greeting='fish'; 
+
+ 
+
+} 
+
+document.write(greeting); 
+
+ 
+
+ var m , n ,x; 
+
+ m =2; 
+
+n =3; 
+
+x =n+m; 
+
+ document.write('<h3>'+x+'</h3>'); 
+
+ 
+
+ 
+
+  var name ; 
+
+ name='razan'; 
+
+ document.write(name); 
+
   </body>
- </head>
+</head>
 <body>
   <header>
       <h1>
