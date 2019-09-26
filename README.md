@@ -1,12 +1,7 @@
 <html>
 <head>
 <body>
-  var scores= [24. 32, 17]; //Array of scores var arraylength scores.length;// Items in array var roundNumber = O; //Current round var msg ''; //Message var i ; // Counter 
-//Loop through the items in the array for (i = O; i < arraylength; i++) { 
-//Arrays are zero based (so 0 is round 1) //Add 1 to the current round roundNumber = (i + l); 
-// Write the current round to message msg += 'Round ' + roundNumber + ' : '; 
-//Get the score from the scores array msg += scores[i] + '<br / >' ; 
-document.getElementByid( 'answer') .innerHTML msg;  
+  <head> <title>Bullseye! Tutoring</title> <link rel ="stylesheet" href="css/c04.css" /> < /head> <body> <section id="page2"> <hl>Bullseye</hl> <img src="images/teacher.png" id="teacher2" alt="" /> <section id="blackboard"></section> </section> <script src="js/example.js"></script> 
   </body>
  </head>
 <body>
