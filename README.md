@@ -1,12 +1,10 @@
 <html>
 <head>
 <body>
-function getGender() {
-  do {
-    var yourGender = prompt('Enter your gender (M / F)').toLowerCase();
-  } while (yourGender !== 'm' && yourGender !== 'f');
-
-  return yourGender;
+if (confirm('Are you sure you want to save this thing into the database?')) {
+    // Save it!
+} else {
+    // Do nothing!
 }
     </body>
  </head>
