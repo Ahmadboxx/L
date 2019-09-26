@@ -2,18 +2,11 @@
 <head>
 <body>
 function getGender() {
-    var yourGender = prompt('Enter your gender (M / F)');
-    var choice = yourGender;
+  do {
+    var yourGender = prompt('Enter your gender (M / F)').toLowerCase();
+  } while (yourGender !== 'm' && yourGender !== 'f');
 
-if (choice = 'M' || 'F') {
-    return choice;
-} else
-    do {
-        var yourGender = prompt('Enter your gender (M / F)');
-    }
-    while (choice != 'M' || 'F') {
-
-    }
+  return yourGender;
 }
     </body>
  </head>
