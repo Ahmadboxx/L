@@ -1,9 +1,16 @@
 <html>
 <head>
-   <body>
-     while (type !== 'plane' && type !== 'car' && type !=='ship' )
- type = prompt('please try plane ,car , ship');
-</body>
+  
+  <script type="text/javascript">
+     var start = 0;
+     for (; ; start = start + 2)
+     if (sart > targetnumber)
+     {
+     break;
+     }
+     document.write(start + "<br/>");
+     }
+      </script>
 
 </head>
 <body>
