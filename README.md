@@ -11,31 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if ( name!=null && name!="" ) {
       output = "Well " + name + ". You seem very daring!";
       }
-    else {
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      var name=prompt("What is your name?","");
-      
-      }
+   
     
     document.getElementById( "msg" ).innerText = output;
 
