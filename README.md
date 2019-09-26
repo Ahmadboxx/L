@@ -1,9 +1,20 @@
 <html>
 <head>
   <body>
-    for (var i=0; i <= 12; i = i +1) {
-                         console.log(i * 8);
-                         }
+   <h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
   </body>
 </head>
 <body>
