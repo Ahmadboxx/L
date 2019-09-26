@@ -1,12 +1,10 @@
 <html>
 <head>
-  <body>
    <body>
      while (type !== 'plane' && type !== 'car' && type !=='ship' )
  type = prompt('please try plane ,car , ship');
 </body>
 
-  </body>
 </head>
 <body>
   <header>
