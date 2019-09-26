@@ -1,7 +1,7 @@
 <html>
 <head>
 <body>
-<input type="button" onclick="prompt('Please enter your favorite website', 'Quackit.com');" value="Display Example">    </body>
+<input type="button" onclick="prompt('Please enter your favorite website', 'gIthub.com');" value="Display Example">    </body>
  </head>
 <body>
   <header>
