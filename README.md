@@ -1,9 +1,12 @@
 <html>
 <head>
 <body>
-  var pass = 50; II Pass mark var score = 90; II Score 
-II Check if the user has passed var hasPassed = score >= pass; 
-II W rite the message into the page var el = document.getElementByld('answer '); e1  . textContent = 'Leve 1 passed: ' + has Passed; 
+  var scores= [24. 32, 17]; //Array of scores var arraylength scores.length;// Items in array var roundNumber = O; //Current round var msg ''; //Message var i ; // Counter 
+//Loop through the items in the array for (i = O; i < arraylength; i++) { 
+//Arrays are zero based (so 0 is round 1) //Add 1 to the current round roundNumber = (i + l); 
+// Write the current round to message msg += 'Round ' + roundNumber + ' : '; 
+//Get the score from the scores array msg += scores[i] + '<br / >' ; 
+document.getElementByid( 'answer') .innerHTML msg;  
   </body>
  </head>
 <body>
