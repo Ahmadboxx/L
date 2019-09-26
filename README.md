@@ -1,11 +1,20 @@
 <html>
 <head>
 <body>
-for (var i = 0; i < links.length; i++) {
-    links[i].onclick = function () {
-        alert(this.title);
-       }
+function getGender() {
+    var yourGender = prompt('Enter your gender (M / F)');
+    var choice = yourGender;
+
+if (choice = 'M' || 'F') {
+    return choice;
+} else
+    do {
+        var yourGender = prompt('Enter your gender (M / F)');
     }
+    while (choice != 'M' || 'F') {
+
+    }
+}
     </body>
  </head>
 <body>
