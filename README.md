@@ -2,35 +2,12 @@
 <head>
   <body>
    <body>
-
-<p>I'm thinking of a letter. Guess which: a, b, c, d or e?</p>
-
-<input id="myInput" type="text">
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var letter = document.getElementById("myInput").value;
-  var text;
-
-  // If the letter is "c"
-  if (letter === "c") {
-    text = "Spot on! Good job!";
-    
-  // If the letter is "b" or "d"
-  } else if (letter === "b" || letter === "d") {
-    text = "Close, but not close enough.";
-    
-  // If the letter is anything else
-  } else {
-    text = "Waaay off..";
-  }
-  document.getElementById("demo").innerHTML = text;
+     var targetNumber = Number(prompt("Please enter your target number", ""));
+var start = 0;
+for (; start <= targetNumber; start = start + 2)
+{
+    document.write(start + "<br/>");
 }
-</script>
 
 </body>
 </html>
