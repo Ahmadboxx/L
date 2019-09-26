@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   e.addEventListener( "click", function() {
 
-    var name=prompt("What is your name?","Homer");
+    var name=prompt("What is your name?","");
     if ( name!=null && name!="" ) {
       output = "Well " + name + ". You seem very daring!";
       }
