@@ -1,7 +1,10 @@
 <html>
 <head>
 <body>
-<input type="button" onclick="prompt('Please enter your favorite website', 'gIthub.com');" value="Display Example">    </body>
+  var pass = 50; II Pass mark var score = 90; II Score 
+II Check if the user has passed var hasPassed = score >= pass; 
+II W rite the message into the page var el = document.getElementByld('answer '); e1  . textContent = 'Leve 1 passed: ' + has Passed; 
+  </body>
  </head>
 <body>
   <header>
