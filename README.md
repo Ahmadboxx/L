@@ -1,12 +1,19 @@
 <html>
 <head>
  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
 
-    var name=prompt("What is your name?","");
+  var e = document.getElementById("go");
+  
+  e.addEventListener( "click", function() {
+
+    var name=prompt("What is your name?","Homer");
     if ( name!=null && name!="" ) {
       output = "Well " + name + ". You seem very daring!";
       }
-   
+    else {
+      output = "Hey, I asked you your name!";
+      }
     
     document.getElementById( "msg" ).innerText = output;
 
@@ -20,6 +27,8 @@
   <input id="go" type="button" value="I dare you to click me!">
 </form>
 <p id="msg"></p>
+
+   
 </head>
 <body>
   <header>
