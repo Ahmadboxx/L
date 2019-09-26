@@ -5,7 +5,6 @@
      while (type !== 'plane' && type !== 'car' && type !=='ship' )
  type = prompt('please try plane ,car , ship');
 </body>
-</html>
 
   </body>
 </head>
