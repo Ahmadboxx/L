@@ -1,62 +1,9 @@
 <html>
 <head>
   <body>
-    //add content 
-
-var yourage =prompt('your age with nummber'); 
-
- 
-
-var greeting; 
-
-if (yourage>3 && yourage<2){ 
-
-    greeting ='so kid'; 
-
- 
-
-} 
-
-else if(yourage>7){ 
-
-    greeting = 'adult'; 
-
- 
-
-} 
-
-else if (yourage<10){ 
-
-    greeting='kid'; 
-
- 
-
-} 
-
-document.write(greeting); 
-
- 
-
- var m , n ,x; 
-
- m =2; 
-
-n =3; 
-
-x =n+m; 
-
- document.write('<h3>'+x+'</h3>'); 
-
- 
-
- 
-
-  var name ; 
-
- name='Ahmad'; 
-
- document.write(name); 
-
+    for (var i=0; i <= 12; i = i +1) {
+                         console.log(i * 8);
+                         }
   </body>
 </head>
 <body>
